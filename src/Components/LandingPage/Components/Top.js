@@ -1,5 +1,5 @@
 import React from "react";
-import BG from "../../assets/images/BG.jpg";
+
 import { FaLocationArrow } from "react-icons/fa";
 const Top = () => {
   return (

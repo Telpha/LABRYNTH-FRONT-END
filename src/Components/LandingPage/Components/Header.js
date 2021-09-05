@@ -1,10 +1,16 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Fragment } from "react";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../../assets/images/logo.png";
 
 const Header = () => {
+  const [location, setlocation] = useState();
+
   const loginHandler = (e) => {
     console.log("Hello");
+  };
+  const handleLocation = (e) => {
+    setlocation(e.target.value);
   };
   return (
     <div className="relative  bg-white overflow-hidden">
@@ -62,8 +68,13 @@ const Header = () => {
                   </a>
                 </div> */}
                 <input
+                  style={{
+                    color: "black",
+                  }}
                   type="text"
-                  name=""
+                  name="location"
+                  value={location}
+                  onChange={handleLocation}
                   placeholder="Search your Location"
                   className="bg-transparent outline-none text-white ml-4 border-2 py-1 px-2 md:py-3 md:px-3  rounded-lg border-opacity-80 sm:mr-2"
                   id=""

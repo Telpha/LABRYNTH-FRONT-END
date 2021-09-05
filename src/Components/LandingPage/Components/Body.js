@@ -3,12 +3,17 @@ import { FaHandsHelping, FaTruck, FaPlusSquare } from "react-icons/fa";
 import { SiCodechef } from "react-icons/si";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import { GiOpenTreasureChest } from "react-icons/gi";
-import customer from "../../assets/images/customer.png";
-import delivery from "../../assets/images/delivery.png";
-import chef from "../../assets/images/chef.png";
+import customer from "../../../assets/images/customer.png";
+import delivery from "../../../assets/images/delivery.png";
+import chef from "../../../assets/images/chef.png";
 const Body = () => {
   return (
-    <div className="mt-16 bg-gray-200 sm:pb-16 pb-12 md:mt-20 mb-24 pt-4 lg:pt-16">
+    <div
+      style={{
+        background: "",
+      }}
+      className="mt-16  sm:pb-16 pb-12 md:mt-20 mb-24 pt-4 lg:pt-16"
+    >
       <div className="">
         {" "}
         <h2
